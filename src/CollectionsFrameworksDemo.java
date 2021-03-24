@@ -2,7 +2,7 @@ import java.util.*;
 
 public class CollectionsFrameworksDemo {
     //ArrayList Example Method
-    public  void ArrayListExp() {
+    public static void ArrayListExp() {
         //Initialising ArrayList
         //Integer is a wrapper class for int datatype 
         ArrayList<Integer> intArr = new ArrayList<Integer>();
@@ -70,7 +70,7 @@ public class CollectionsFrameworksDemo {
         System.out.println("Size of the Vector: "+intVec.size()+"\n");       
     }
 
-    public void StackExp(){
+    public static void StackExp(){
         //instantiate Stack object
         Stack<String> strStack = new Stack<String>();
 
@@ -101,7 +101,7 @@ public class CollectionsFrameworksDemo {
 
     }
 
-    public void LinkedListExp() {
+    public static void LinkedListExp() {
         //instantiate LinkedList object
         LinkedList<String> strLinkedList = new LinkedList<String>();
 
@@ -134,7 +134,7 @@ public class CollectionsFrameworksDemo {
         }
     }
 
-    public static void main(String[] Args) throws Exception{
+    public static void PriorityQueueExp(){
         PriorityQueue<Integer> intPriorityQueue = new PriorityQueue<Integer>();
 
         //add() as usual
@@ -157,4 +157,11 @@ public class CollectionsFrameworksDemo {
         
     }
 
+    public static void main(String[] Args) throws Exception{
+        ArrayListExp();
+        VectorExp();
+        StackExp();
+        LinkedListExp();
+        PriorityQueueExp();
+    }
 }
